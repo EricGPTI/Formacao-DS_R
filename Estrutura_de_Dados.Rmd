@@ -1,0 +1,40 @@
+---
+Formação Data Science - Fernando Amaral
+Estruturas de Dados
+---
+
+Vetores
+Para criarmos vetores usamos o "c" que significa combine(informa ao R que serão passados vários valores). Vetores só podem ter um tipo único de dados, se texto apenas texto, se número apenas número.
+Ao trabalhar com vetores, podemos acessar seus valores por seu índice. No R a indexação inicia em 1 não em 0, conforme maioria das linguagens.
+```{r}
+x = c(1,2,3,4,5,6)
+x
+x[1]
+```
+Podemos também fazermos atribuição para um dado índice.
+```{r}
+x[2] = 10
+x
+```
+No R a classe do objeto não é definido pelo objeto mas sim pelo valor do objeto.
+```{r}
+class(x)
+```
+
+Vetore com String
+```{r}
+y = c("a", "b", "c", "D")
+y
+```
+
+Matriz
+Matriz são dados bi-direcionais possuindo linhas e colunas. Nas matrizes os tipos de dados devem ser iguais(do mesmo tipo).7
+```{r}
+VADeaths
+colnames(VADeaths)
+rownames(VADeaths)
+```
+
+Para nomearmos linhas e colunas usamos as funções colnames() e rownames() passando como argumento nossa matriz.
+
+Nas matrizes podemos acessar um dado localizado numa linha, numa coluna ou em uma célula específica.

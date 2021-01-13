@@ -1,0 +1,57 @@
+---
+Formação Data Science - Fernando Amaral
+Aspectos Diversos
+---
+
+Verificar o Diretório de Trabalho
+
+```{r}
+getwd()
+```
+
+Setar o diretório de trabalho - No entanto a mudança só funciona dentro do block de código, isso no caso do R notebook. Dê preferência para a configuração de diretório pelo terminal.
+
+```{r}
+setwd("D:/Projetos Dev/Formacao_DS_R")
+```
+
+```{r}
+getwd()
+```
+
+Tipo de Objeto - Para verificar o tipo usamos o método class() passando o que objeto como parâmetro.
+```{r}
+class(iris)
+```
+
+Salvar um objeto
+```{r}
+#Clonando o objeto iris
+iristeste = iris
+
+#salvar o objeto num arquivo.
+save(iristeste, file="iristeste.Rdata")
+
+#Remover o objeto da instância do R mas manter salvo em arquivo para se usado posteriormente.
+rm(iristeste)
+
+#Chamar o objeto para validar a remoção
+iristeste
+```
+
+Carregando os dados do iristeste que salvamos e apresentando novamente.
+```{r}
+load(file="iristeste.Rdata")
+
+#Apresentar os dados para validar a carga do mesmo
+iristeste
+```
+
+
+Criar um vetor e um gráfico básico.
+```{r}
+x = c(12,34,56,79)
+y = c(1,6,9,14)
+plot(x,y)
+```
+

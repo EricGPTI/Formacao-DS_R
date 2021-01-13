@@ -1,0 +1,24 @@
+---
+Formação Data Science - Fernando Amaral
+Pacotes
+---
+Instalação de Pacotes.
+O comando de instalação só deve ser chamado uma única vez, depois precisa apenas ser importado.
+
+```{r}
+#Instalando pacote e depois importando.
+#install.packages("e1071")
+library(e1071)
+
+```
+
+O comando detach limpa o pacote da memória, mas não remove o pacote. Essa ação quase nunca é necessária. Se precisar remover um pacote, use o comando remove.packages("pacote_name")
+```{r}
+#Descarregar pacote
+detach("package:e1071", unload=TRUE)
+
+#Remover o Pacote
+remove.packages("e1071")
+```
+
+

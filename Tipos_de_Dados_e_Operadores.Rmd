@@ -1,0 +1,59 @@
+---
+Formação Data Science - Fernando Amaral
+Tipos de dados e operadores
+---
+O R faz declaração de tipo de dados de forma implicita
+```{r}
+delta = 8
+class(delta)
+```
+Variáveis do tipo numeric possui casas decimais.
+Se quisermos declarar um tipo inteiro devemos usar a letra L após o valor.
+```{r}
+delta2 = 8L
+class(delta2)
+```
+Outros tipos
+Lógico
+Podemos declara variáveis booleanas passando TRUE/FALSE ou apenas a primeira letra T/F
+```{r}
+logico = TRUE
+logico1 = F
+class(logico)
+class(logico1)
+```
+Caracteres
+Para criarmos variáveis de tipo string o R permite o uso de aspas simples ou duplas. 
+```{r}
+caracter = "Texto"
+caracter1 = 'Texto1'
+class(caracter)
+class(caracter1)
+```
+Operações Matemáticas
+As operações matemáticas seguem as mesmas regras da matemática.
+Quando não atribuimos o resultado de uma operação a nenhuma variável o R irá apresentar o resultado no console.
+```{r}
+c = 2
+d = 4
+(c + d) * d
+e = (c + d) * d
+e
+```
+
+Testes Lògicos
+```{r}
+a = 1
+b = 2
+a < b
+a == b
+```
+
+Raiz Quadrada
+```{r}
+sqrt(2500)
+```
+
+
+
+
